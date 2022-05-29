@@ -1,14 +1,14 @@
 <!-- Menghubungkan dengan view template master -->
-@extends('../layout/main')
+@extends('layout.main')
 
 <!-- isi bagian judul halaman -->
 <!-- cara penulisan isi section yang pendek ryrt-->
-@section('judul_halaman', 'Halaman Home')
+@section('title', 'Record')
 
 
 <!-- isi bagian konten -->
 <!-- cara penulisan isi section yang panjang -->
-@section('konten')
+@section('content')
 
 <div class="row align-items-md-stretch">
   <div class="col-md-6">
@@ -19,6 +19,7 @@
         <div class="col-12">
           <select class="form-select sel-dur" aria-label="Default select
             example">
+            <option value="">-- Select Duration --</option>
             <option value="540">09:00</option>
             <option value="480">08:00</option>
             <option value="720">12:00</option>
@@ -45,8 +46,8 @@
     <div class="h-100 p-5 text-white bg-dark rounded-3">
       <h2>Time Is Money</h2>
       <h1 id="time">...</h1>
-      <p>Or, keep it light and add a border for some added definition to the
-        boundaries of your content</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+        ipsum? Lorem ipsum dolor sit amet.</p>
     </div>
   </div>
 
