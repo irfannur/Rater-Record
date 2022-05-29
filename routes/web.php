@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CatatController;
+use App\Http\Controllers\RecordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +14,14 @@ use App\Http\Controllers\CatatController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [RecordController::class, 'index']);
 
 Route::get('halo', function () {
     return view('halo');
 });
 
-Route::get('catat', [CatatController::class, 'index']);
+Route::get('record', [RecordController::class, 'index']);
