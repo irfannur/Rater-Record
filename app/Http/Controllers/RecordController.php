@@ -8,8 +8,8 @@ class RecordController extends Controller
 {
     public function index() {
   
-        return view('record/index', [
-            'arr' => ['aa', 'bb', 'cc'], 
+        return view('record.index', [
+            'arr' => ['aa', 'bb', 'cc'],
             'name' => 'sssss', 
         ]);
     }
