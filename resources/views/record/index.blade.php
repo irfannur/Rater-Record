@@ -1,13 +1,8 @@
-<!-- Menghubungkan dengan view template master -->
+
 @extends('layout.main')
 
-<!-- isi bagian judul halaman -->
-<!-- cara penulisan isi section yang pendek ryrt-->
 @section('title', 'Record')
 
-
-<!-- isi bagian konten -->
-<!-- cara penulisan isi section yang panjang -->
 @section('content')
 
 <div class="row align-items-md-stretch">

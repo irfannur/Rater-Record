@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RecordController;
+use App\Http\Controllers\MstprojectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::get('halo', function () {
 });
 
 Route::get('record', [RecordController::class, 'index']);
+
+Route::get('project', [MstprojectController::class, 'index']);
