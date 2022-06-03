@@ -9,5 +9,16 @@ class mst_project extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['idproject'];
+    protected $primaryKey = 'idproject';
+    public $incrementing = false;
+    protected $keyType = 'string';
+
+    protected $fillable = [
+        'projectname',
+        'description',
+        'rateperhour',
+        'since_at'
+    ];
+
+    //protected $guarded = ['idproject'];
 }
